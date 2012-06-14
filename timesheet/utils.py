@@ -15,8 +15,9 @@ def sum_time(time, offset):
 def generate_time():
     period = []
     for start_time, end_time in (('0800', '1200'), ('1300', '1530')):
-       offset = random.randint(0, 15)
-       period.append((sum_time(start_time, offset), sum_time(end_time, offset)))
+        offset = random.randint(0, 15)
+        period.append((sum_time(start_time, offset),
+                       sum_time(end_time, offset)))
     return period
 
 
